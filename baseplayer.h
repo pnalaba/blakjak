@@ -29,7 +29,6 @@ class baseplayer {
     bool bust;
     static cardshoe *shoe;
     int cardSum;
-  protected:
     std::vector<card*> cards; // a vector of cards to hold dealt cards
 };
 
