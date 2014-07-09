@@ -114,6 +114,7 @@ int main(int argc, char** argv) {
     printf ("=====================================================\n");
     printf ("Exiting : Player has %0d credits after the game\n", moneyLeft);
   }
+  delete (shoe);
 }
 
 void printTable(baseplayer& dealer, player& player, int bet) {
