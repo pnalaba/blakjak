@@ -8,8 +8,15 @@ baseplayer::baseplayer(){
   resetCards();
 }
 
+baseplayer::~baseplayer() {
+  resetCards();
+}
+
 void baseplayer::resetCards(){
   bust = false;
+  for (int i = 0; i < cards.size(); i++) {
+    delete cards[i];
+  }
   cards.clear();
 }
 

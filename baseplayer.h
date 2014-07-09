@@ -18,13 +18,14 @@ class baseplayer {
     void hit(); //takes card from shoe and adds to cards[]
     bool isBust();
     int getCardSum();
-    baseplayer();
     void printCards(); // prints values of all cards in cards[]
     static void setShoe(cardshoe *inshoe);
     static cardshoe *getShoe() { return shoe; };
     card* getLastCard(); // gets a handle to the last card that was hit
     void resetCards(); // start fresh - clear cards[]
     int getNumCards();
+    baseplayer();
+    ~baseplayer();
   private :
     bool bust;
     static cardshoe *shoe;
